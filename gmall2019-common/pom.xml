@@ -11,6 +11,7 @@
 
     <artifactId>dw-common</artifactId>
 
+    <!--一次修改-->
     <dependencies>
         <dependency>
             <groupId>com.alibaba</groupId>

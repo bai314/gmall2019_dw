@@ -2,12 +2,21 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gmall2019-common" />
+        <module name="gmall0826-common" />
+        <module name="gmall0826-logger" />
+        <module name="gmall0826-mock" />
+        <module name="gmall0826-realtime" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dw-mocker" target="1.8" />
+      <module name="gmall0826-logger (1)" target="1.8" />
+      <module name="gmall2019-common" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

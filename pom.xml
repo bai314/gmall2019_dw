@@ -3,22 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.atguigu.gmall2019.dw</groupId>
-    <artifactId>gmall2019_dw</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>dw_common</module>
-        <module>gmall2019-common</module>
-    </modules>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.10.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <groupId>com.atguigu.gmall0826</groupId>
+    <artifactId>gmall0826-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>gmall0826-common</module>
+        <module>gmall0826-mock</module>
+        <module>gmall0826-logger</module>
+        <module>gmall0826-realtime</module>
+    </modules>
+    <packaging>pom</packaging>
+
 
     <properties>
         <spark.version>2.1.1</spark.version>
@@ -110,7 +110,20 @@
                 <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
                 <version>${spark.version}</version>
             </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>0.10.2.1</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>2.9.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>
